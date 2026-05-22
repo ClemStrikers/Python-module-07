@@ -1,14 +1,15 @@
-import abc
-from .models import Creature, TransformCapability, HealCapability
+from abc import ABC, abstractmethod
+from ex0.creatures import Creature
+from ex1.capacities import TransformCapability, HealCapability
 from .exceptions import InvalidStrategyError
 
 
-class BattleStrategy(abc.ABC):
-    @abc.abstractmethod
+class BattleStrategy(ABC):
+    @abstractmethod
     def act(self, creature: Creature) -> None:
         pass
 
-    @abc.abstractmethod
+    @abstractmethod
     def is_valid(self, creature: Creature) -> bool:
         pass
 

@@ -1,8 +1,8 @@
-from ex1 import (
+from ex1.capacities import (
     HealingCreatureFactory,
     TransformCreatureFactory,
     HealCapability,
-    TransformCapability
+    TransformCapability,
 )
 
 

@@ -1,7 +1,11 @@
-from .models import (
-    Creature, CreatureFactory, FlameFactory, AquaFactory,
+from ex0.creatures import (
+    Creature, CreatureFactory, FlameFactory, AquaFactory
+)
+
+from ex1.capacities import (
     HealingCreatureFactory, TransformCreatureFactory
 )
+
 from .strategies import (
     BattleStrategy, NormalStrategy, AggressiveStrategy, DefensiveStrategy
 )

@@ -1,12 +1,12 @@
-import abc
+from abc import ABC, abstractmethod
 
 
-class Creature(abc.ABC):
+class Creature(ABC):
     def __init__(self, name: str, creature_type: str) -> None:
         self.name: str = name
         self.creature_type: str = creature_type
 
-    @abc.abstractmethod
+    @abstractmethod
     def attack(self) -> str:
         pass
 
@@ -46,12 +46,12 @@ class Torragon(Creature):
         return "Torragon uses Hydro Pump!"
 
 
-class CreatureFactory(abc.ABC):
-    @abc.abstractmethod
+class CreatureFactory(ABC):
+    @abstractmethod
     def create_base(self) -> Creature:
         pass
 
-    @abc.abstractmethod
+    @abstractmethod
     def create_evolved(self) -> Creature:
         pass
 

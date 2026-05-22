@@ -1,6 +1,8 @@
-from .models import (
+from ex0.creatures import (
     Creature,
     CreatureFactory,
+)
+from ex1.capacities import (
     HealingCreatureFactory,
     TransformCreatureFactory,
     HealCapability,

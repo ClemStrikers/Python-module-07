@@ -1,8 +1,19 @@
-from ex2 import (
-    FlameFactory, AquaFactory, HealingCreatureFactory,
-    TransformCreatureFactory, NormalStrategy, AggressiveStrategy,
-    DefensiveStrategy, CreatureFactory, BattleStrategy,
-    InvalidStrategyError, Creature
+from ex0.creatures import (
+    FlameFactory, AquaFactory, CreatureFactory, Creature
+)
+
+from ex1.capacities import (
+    HealingCreatureFactory,
+    TransformCreatureFactory
+)
+
+from ex2.strategies import (
+    NormalStrategy, AggressiveStrategy,
+    DefensiveStrategy, BattleStrategy,
+)
+
+from ex2.exceptions import (
+    InvalidStrategyError
 )
 
 
