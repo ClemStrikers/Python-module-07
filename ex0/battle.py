@@ -2,7 +2,7 @@ from ex0 import FlameFactory, AquaFactory, CreatureFactory, Creature
 
 
 def verify_factory(factory: CreatureFactory) -> None:
-    print("Testing factory")
+    print("\nTesting factory")
     base: Creature = factory.create_base()
     evolved: Creature = factory.create_evolved()
 
@@ -13,7 +13,7 @@ def verify_factory(factory: CreatureFactory) -> None:
 
 
 def battle(f1: CreatureFactory, f2: CreatureFactory) -> None:
-    print("Testing battle")
+    print("\nTesting battle")
     c1: Creature = f1.create_base()
     c2: Creature = f2.create_base()
 

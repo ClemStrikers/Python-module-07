@@ -20,7 +20,7 @@ def tournament_battle(
                 c1: Creature = f1.create_base()
                 c2: Creature = f2.create_base()
 
-                print("* Battle *")
+                print("\n* Battle *")
                 print(c1.describe())
                 print("vs.")
                 print(c2.describe())
@@ -43,10 +43,13 @@ if __name__ == "__main__":
     def_s = DefensiveStrategy()
 
     print("Tournament 0 (basic)")
+    print("[ (Flameling+Normal), (Healing+Defensive) ]")
     tournament_battle([(flame_f, norm_s), (heal_f, def_s)])
 
     print("\nTournament 1 (error)")
+    print("[ (Flameling+Aggressive), (Healing+Defensive) ]")
     tournament_battle([(flame_f, aggr_s), (heal_f, def_s)])
 
     print("\nTournament 2 (multiple)")
+    print("[ (Aquabub+Normal), (Healing+Defensive), (Transform+Aggressive) ]")
     tournament_battle([(aqua_f, norm_s), (heal_f, def_s), (trans_f, aggr_s)])
